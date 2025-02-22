@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:inidiahiringg/View/settings.dart';
+import 'package:inidiahiringg/View/settings1.dart';
+import 'Company_List_Detail.dart';
 import 'Job_Detail_Screen.dart';
 import 'Subscription.dart';
 import 'View_All.dart';
@@ -323,7 +326,10 @@ class _HomeScreenState extends State<HomeScreen> {
               top: 0,
               right: 0,
               child: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => AccountSettingsScreen()));
+                },
                 icon: const Icon(CupertinoIcons.heart, color: Colors.red),
               ),),
           ],),
@@ -445,9 +451,13 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Image.asset("assets/assets1.jpg",height: 80,),
-                const Text(
-                  "Product Designer",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                InkWell(
+                  child: const Text(
+                    "Product Designer",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                  ),onTap: (){
+                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>CompanyPage()));
+                },
                 ),
               ],),
           ],),

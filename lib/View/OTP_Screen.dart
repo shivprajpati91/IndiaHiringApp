@@ -74,15 +74,10 @@ class _OtpLoginState extends State<OtpLogin> {
           
           
               ]
-          ),
-        ),
-      ),
-    );
+          ),),
+      ),);
   }
 }
-
-
-
 class MobileLogin extends StatefulWidget {
   const MobileLogin({super.key});
 
@@ -109,7 +104,7 @@ class _MobileLoginState extends State<MobileLogin> {
                 child:  Padding(
                   padding: const EdgeInsets.only(left: 50.0),
                   child: Lottie.asset("assets/otp.json",height: 200),
-                )
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 120.0,top: 30),
@@ -154,12 +149,9 @@ class _MobileLoginState extends State<MobileLogin> {
                         border: OutlineInputBorder(
                           borderSide: const BorderSide(color: Colors.black54),
                           borderRadius: BorderRadius.circular(10),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+                        ),),
+                    ),),
+                ],),
               const SizedBox(height: 30),
               SizedBox(
                 width: double.infinity,
@@ -179,12 +171,9 @@ class _MobileLoginState extends State<MobileLogin> {
                     "Send OTP",
                     style: TextStyle(color: Colors.white, fontSize: 18),
                   ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
+                ),),
+            ],),
+        ),),
     );
   }
 }

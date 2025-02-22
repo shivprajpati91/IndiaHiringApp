@@ -6,6 +6,7 @@ import 'View/Profile_Setup.dart';
 
 void main() {
   runApp(const MyApp());
+
 }
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

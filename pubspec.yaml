@@ -32,7 +32,7 @@ dependencies:
     sdk: flutter
   http: ^1.2.2
   provider: ^6.1.2
-  fluttertoast: ^8.2.3
+#  fluttertoast: ^8.2.3
   another_flushbar: ^1.12.30
   shared_preferences: ^2.3.4
   flutter_animate: ^3.0.0
